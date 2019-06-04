@@ -11,9 +11,7 @@
 	font-style: normal;
 }
 
-body {
-	font-family: 'Lato', Arial, sans-serif;
-}
+body {}
 
 a, button {
 	outline: none;
@@ -23,23 +21,31 @@ a {
 	text-decoration: none;
 }
 
-.container > header {
+header {
 	text-align: center;
+	background-image: url('../img/fondo.jpg');
+  	background-position: center;
+  	background-size: 100em 30em;
+
 }
 
-.container > header h1 {	
+header h1 {	
 	font-size: 3.5em;
-	font-weight: 300;
+	font-weight: 200;
+	font-family: 'Indie Flower', cursive;
 }
 
-.container > header span {
+ header span {
 	display: inline;
-	color: #160303;
+	font-weight: 300;
+	color: #F1E919;
+	text-shadow: 3px 3px 3px #0F0404;	
 	font-size: 2.3em;
+	font-family: 'Indie Flower', cursive;
 }
 
 /* To Navigation Style */
-.codrops-top {
+/* .codrops-top {
 	background: #f06060;
 	background: rgba(255, 255, 255, 0.1);
 	text-transform: uppercase;
@@ -91,7 +97,7 @@ a {
 }
 
 /* Demo Buttons Style */
-.codrops-demos {
+/*.codrops-demos {
 	padding-top: 1em;
 	font-size: 0.9em;
 }
@@ -111,22 +117,44 @@ a {
 .codrops-demos a.current-demo,
 .codrops-demos a.current-demo:hover {
 	opacity: 0.6;
-}
+} */
 
 .container > section {
-	padding: 2em;
-	font-size: 1.4em;
-	max-width: 50em;
+	font-weight: 300;
+	padding: 1em;
+	font-size: 1em;
+	/*max-width: 60em;*/
 	margin: 0 auto;
-	color: #FFFBFB;
+	text-align: justify;
+}
+.container > section #img1{
+	float: right;
+	margin-bottom:1em;
+}
+.container > section #img2{
+	float: left;
+	width: 550px;
+	height: 330px;
 }
 
-.container > section p {
-	padding: 0.8em 0;
+.container > section #cont1 {
+	font-family: 'Ranga', cursive;
+	vertical-align: middle;
+	padding: .8em ;
 	text-align: justify;
-	opacity: 0.5;
 	font-weight: 300;
 	line-height: 1.4;
+	text-indent: 1em;
+}
+.container > section #cont2 {
+	font-family: 'Ranga', cursive;
+	float: right;
+	padding: 1em ;
+	margin-bottom: 2.3em;
+	text-align: justify;
+	font-weight: 300;
+	line-height: 1.4;
+	text-indent: 1em;
 }
 
 @media screen and (max-width: 25em) {

@@ -14,11 +14,6 @@ body {
   height: 100%;
 }
 
-body {
-  background: #f06060;
-  color: #fff;
-}
-
 .csstransforms .cn-wrapper {
   font-size: 1em;
   width: 26em;
@@ -58,7 +53,7 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  opacity: 0;
+ /* opacity: 0;*/
   visibility: hidden;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
@@ -183,19 +178,16 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 }
 
 .csstransforms .cn-wrapper li:nth-child(odd) a {
-  background-color: #a11313;
-  background-color: hsla(0, 88%, 63%, 1);
+  background-color: #E7D891;
 }
 
 .csstransforms .cn-wrapper li:nth-child(even) a {
-  background-color: #a61414;
-  background-color: hsla(0, 88%, 65%, 1);
+    background-color: #8F8553;
 }
 
 /* active style */
 .csstransforms .cn-wrapper li.active a {
-  background-color: #b31515;
-  background-color: hsla(0, 88%, 70%, 1);
+    background-color: #938335;
 }
 
 
@@ -203,8 +195,7 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 .csstransforms .cn-wrapper li:not(.active) a:hover,
 .csstransforms .cn-wrapper li:not(.active) a:active,
 .csstransforms .cn-wrapper li:not(.active) a:focus {
-  background-color: #b31515;
-  background-color: hsla(0, 88%, 70%, 1);
+   background-color: #000000;);
 }
 .csstransforms .cn-wrapper li:not(.active) a:focus
 {
@@ -245,7 +236,7 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 .no-csstransforms .cn-wrapper li a:hover,
 .no-csstransforms .cn-wrapper li a:active,
 .no-csstransforms .cn-wrapper li a:focus {
-  background-color: white;
+  /*background-color: white;*/
 }
 
 .no-csstransforms .cn-wrapper li.active a {
