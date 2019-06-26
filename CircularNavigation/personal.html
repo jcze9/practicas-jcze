@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Hotel</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>		
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component1.css" />
+		<link rel="stylesheet" type="text/css" href="css/formulario.css" />
+   	    <link rel="stylesheet" type="text/css" href="css/navigation-dark.css">
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower&display=swap" rel="stylesheet">		
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&effect=3d|fire-animation|destruction|putting-green|anaglyph|shadow-multiple|outline|neon|brick-sign|ice">
+		 <link rel="stylesheet"type="text/css" href="css/slicknav.min.css">
+    	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+		<script src="js/modernizr-2.6.2.min.js"></script>
+		<meta name="robots" content="noindex,follow" />
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7243260-2']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+	</head>		
+	<body id="ere">
+		<header id="re">
+				<h1 class = "font-effect-fire-animation">Hotel Tanos</h1>
+				<span >Acciones desvanecidas</span>					
+			</header>				
+					<!-- Top Navigation -->	
+<nav class="menu-navigation-dark">
+    <a href="cliente.html"><i class="fa fa-camera-retro"></i><span>Resgistrate</span></a>
+    <a href="alquiler.html"><i class="fa fa-code"></i><span>Alquila</span></a>
+    <a href="reservas.html"><i class="fa fa-comment"></i><span>Reserva</span></a>
+    <a href="personal.html"><i class="fa fa-plane"></i><span>Registro de empleados</span></a>
+</nav>
+				<!-- End Nav Structure -->
+			<form class="form" action="conecionp.php" method="POST">
+  <h2 class="font-effect-ice">Personal</h2>
+  <input name="ape" placeholder="APELLIDOS" type="text" tabindex="1" required autofocus></input><p>
+  <input name="nob" placeholder="NOMBRES" type="text" tabindex="2" required ></input><p>
+  <input name="dne" placeholder="DNI" type="text" tabindex="3" required ></input><p>
+  <input name="tele" placeholder="TELEFONO" type="text" tabindex="4" required ></input><p>
+  <input name="dire" placeholder="DIRECCION" type="text" tabindex="5" required ></input><p>
+  <input name="tur" placeholder="Turno" type="text" tabindex="6" required ></input><p>
+  <button class="font-effect-fire-animation" type="submit" value="submit form">Send Message</button> 
+</form>
+	<div class="component">
+		<!-- Start Nav Structure -->
+		<button class="cn-button font-effect-destruction" id="cn-button">+</button>
+		<div class="cn-wrapper" id="cn-wrapper">
+				  <ul>
+				    <li><a href="planes.html"><span class="icon-office font-effect-3d"></span></a></li>
+				    <li><a href="servicios.html"><span class="icon-bell font-effect-3d"></span></a></li>
+				    <li><a href="index.html"><span class="icon-home font-effect-3d"></span></a></li>
+				    <li><a href="infor.html"><span class="icon-info font-effect-3d"></span></a></li>
+				    <li><a href="cliente.html"><span class="icon-user-plus font-effect-3d"></span></a></li>
+				   </ul>
+			</div>
+		<div id="cn-overlay" class="cn-overlay"></div>
+		<!-- End Nav Structure -->
+	</div>
+<script>
+    $(function(){
+        var menu = $('.menu-navigation-dark');
+        menu.slicknav();
+        // Mark the clicked item as selected
+        menu.on('click', 'a', function(){
+                var a = $(this);
+
+            a.siblings().removeClass('selected');
+            a.addClass('selected');
+        });
+    });
+
+</script>
+		<script src="js/polyfills.js"></script>
+		<script src="js/demo1.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="js/jquery.slicknav.min.js"></script>
+	</body>
+</html>
